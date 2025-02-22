@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/IO_QML">/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/IO_QML</file>
+
+  </qresource>
+</RCC>

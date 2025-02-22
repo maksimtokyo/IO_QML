@@ -1,0 +1,14 @@
+-rootPath
+/Users/mac/IO_QML
+-cmake-output
+-output-file
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/.qt/qml_imports/appIO_QML_conf.cmake
+-importPath
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/IO_QML
+-importPath
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo
+-importPath
+/Users/mac/6.7.2/macos/./qml
+-qrcFiles
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/.qt/rcc/qmake_IO_QML.qrc
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/.qt/rcc/appIO_QML_raw_qml_0.qrc

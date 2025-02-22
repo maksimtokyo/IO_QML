@@ -1,0 +1,127 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "td/tdutils/generate/generate_mime_types_gperf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_definitions",
+			"td_set_up_compiler"
+		],
+		"files" : 
+		[
+			"td/tdutils/generate/CMakeLists.txt",
+			"td/CMake/TdSetUpCompiler.cmake",
+			"td/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 133,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 91,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 94,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_GNU_SOURCE"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "generate_mime_types_gperf::@93a86e5d1888d557a482",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-dead_strip",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "generate_mime_types_gperf",
+	"nameOnDisk" : "generate_mime_types_gperf",
+	"paths" : 
+	{
+		"build" : "td/tdutils/generate",
+		"source" : "td/tdutils/generate"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "td/tdutils/generate/generate_mime_types_gperf.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

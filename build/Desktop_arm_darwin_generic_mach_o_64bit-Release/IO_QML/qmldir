@@ -1,0 +1,7 @@
+module IO_QML
+typeinfo appIO_QML.qmltypes
+prefer :/qt/qml/IO_QML/
+Main 1.0 Main.qml
+LogPage 1.0 LogPage.qml
+Chats 1.0 Chats.qml
+

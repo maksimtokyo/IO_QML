@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"td/tdnet/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/tdnet/libtdnet.a"
+			],
+			"targetId" : "tdnet::@82a003cd2786d78f80a1",
+			"targetIndex" : 82,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "td/tdnet",
+		"source" : "td/tdnet"
+	}
+}

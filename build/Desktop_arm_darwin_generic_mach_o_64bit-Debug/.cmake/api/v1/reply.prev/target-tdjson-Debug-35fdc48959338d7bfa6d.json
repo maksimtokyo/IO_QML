@@ -1,0 +1,366 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "td/libtdjson.dylib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"add_definitions",
+			"td_set_up_compiler",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"td/CMakeLists.txt",
+			"td/tddb/CMakeLists.txt",
+			"td/tdnet/CMakeLists.txt",
+			"td/tdutils/CMakeLists.txt",
+			"td/CMake/TdSetUpCompiler.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1289,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1362,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1290,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1276,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1235,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1216,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 7
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 68,
+				"parent" : 9
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 365,
+				"parent" : 11
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 91,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 94,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1292,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIC -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 14,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"define" : "tdjson_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 16,
+					"path" : "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/td"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/mac/IO_QML/td"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/mac/IO_QML/td/td/generate/auto"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/mac/IO_QML/td/tdutils"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/td/tdutils"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "tdapi::@2be9c0b8709c4fd386a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdmtproto::@2be9c0b8709c4fd386a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdcore::@2be9c0b8709c4fd386a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdclient::@2be9c0b8709c4fd386a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdjson_private::@2be9c0b8709c4fd386a5"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdutils::@565370f97e3ca34d6fc4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdactor::@2f1b0e430189e64ff31a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdnet::@82a003cd2786d78f80a1"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tdsqlite::@5f66255a82aa063dcfa3"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "tddb::@904d4c18f70a77575746"
+		}
+	],
+	"id" : "tdjson::@2be9c0b8709c4fd386a5",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-dead_strip  -Wl,-exported_symbols_list,/Users/mac/IO_QML/td/tdclientjson_export_list",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libtdjson_private.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "libtdclient.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libtdcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libtdapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "tddb/libtddb.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "sqlite/libtdsqlite.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "libtdmtproto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "tdnet/libtdnet.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/homebrew/lib/libssl.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "tdactor/libtdactor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "tdutils/libtdutils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/homebrew/lib/libcrypto.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/libz.tbd",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "tdjson",
+	"nameOnDisk" : "libtdjson.dylib",
+	"paths" : 
+	{
+		"build" : "td",
+		"source" : "td"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "td/td/telegram/td_json_client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "td/td/telegram/td_log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "td/td/telegram/td_json_client.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "td/td/telegram/td_log.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

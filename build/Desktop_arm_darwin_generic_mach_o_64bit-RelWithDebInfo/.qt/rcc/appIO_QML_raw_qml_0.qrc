@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/IO_QML/">
+    <file alias="Main.qml">/Users/mac/IO_QML/Main.qml</file>
+  </qresource>
+</RCC>
+

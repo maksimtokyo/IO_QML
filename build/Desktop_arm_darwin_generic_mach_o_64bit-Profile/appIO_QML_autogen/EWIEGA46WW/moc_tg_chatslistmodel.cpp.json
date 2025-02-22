@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "tg_chatslistmodel",
+            "object": true,
+            "qualifiedClassName": "tg_chatslistmodel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tg_chatslistmodel.h",
+    "outputRevision": 68
+}

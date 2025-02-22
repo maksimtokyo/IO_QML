@@ -1,0 +1,497 @@
+[
+    {
+        "classes": [
+            {
+                "className": "tg_chatslistmodel",
+                "object": true,
+                "qualifiedClassName": "tg_chatslistmodel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            },
+            {
+                "className": "QTgChatHistory",
+                "object": true,
+                "qualifiedClassName": "QTgChatHistory",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "loadChat",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "ChatListCreated",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "td::td_api::messages*"
+                            }
+                        ],
+                        "name": "createQList",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sender_id",
+                                "type": "std::int64_t"
+                            },
+                            {
+                                "name": "messagetype",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fileid",
+                                "type": "std::int64_t"
+                            },
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "push_message",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sender_id",
+                                "type": "std::int64_t"
+                            },
+                            {
+                                "name": "messagetype",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fileid",
+                                "type": "std::int64_t"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "push_message",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sender_id",
+                                "type": "std::int64_t"
+                            },
+                            {
+                                "name": "messagetype",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "push_message",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "sender_id",
+                                "type": "std::int64_t"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "push_message",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tg_chatslistmodel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "Tontroll"
+                    }
+                ],
+                "className": "tg_controller_qt",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "stringstate",
+                        "notify": "stringstateChanged",
+                        "read": "stringstate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setStringstate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "chatsmodel",
+                        "notify": "chatsmodeChanged",
+                        "read": "chatsmodel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "tg_chatslistmodel*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "chatHistory",
+                        "notify": "chatHistoryChanged",
+                        "read": "chatHistory",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QTgChatHistory*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "mainuserid",
+                        "notify": "mainuseridChanged",
+                        "read": "mainuserid",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "std::int64_t",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "messagestring",
+                        "notify": "messagestringChanged",
+                        "read": "messagestring",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setmessagestring"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "fileid",
+                        "notify": "fileidChanged",
+                        "read": "fileid",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "std::int64_t",
+                        "user": false,
+                        "write": "setfileid"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "logged",
+                        "notify": "loggedChanged",
+                        "read": "logged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setlogged"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "indexmessage",
+                        "notify": "indexmessageChanged",
+                        "read": "indexmessage",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setindexmessage"
+                    }
+                ],
+                "qualifiedClassName": "tg_controller_qt",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "stringstateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statusloaderChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "chatsmodeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "chatHistoryChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "std::int64_t"
+                            }
+                        ],
+                        "name": "getChathistory",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "start_handl",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "loadedViewChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "mainuseridChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "td::td_api::messages*"
+                            }
+                        ],
+                        "name": "createQList",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "messagestringChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "loggedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fileidChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "indexmessageChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "std::int64_t"
+                            }
+                        ],
+                        "name": "get_ans_parametrs",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "paramaters_handler",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "need_exit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "std::int64_t"
+                            }
+                        ],
+                        "name": "getChatHistory",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "qml_sendmessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "logged_correct",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tg_controller_qt.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "tg_peson_qt",
+                "object": true,
+                "qualifiedClassName": "tg_peson_qt",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "std::int32_t"
+                            }
+                        ],
+                        "name": "send_ans_parametrs",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "restart_me",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "td::td_api::messages*"
+                            }
+                        ],
+                        "name": "createQList",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tg_peson_qt.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "tg_while_handler_qt",
+                "object": true,
+                "qualifiedClassName": "tg_while_handler_qt",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "end_loop",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "start_loop",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "tg_while_handler_qt.h",
+        "outputRevision": 68
+    }
+]

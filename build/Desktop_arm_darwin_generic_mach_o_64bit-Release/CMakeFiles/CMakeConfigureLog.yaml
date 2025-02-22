@@ -1,0 +1,1544 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 23.6.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38b34/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_38b34.dir/build.make CMakeFiles/cmTC_38b34.dir/build
+        Building CXX object CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.3)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang++: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.6.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin23.6.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_38b34
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38b34.dir/link.txt --verbose=1
+        /usr/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38b34
+        Apple clang version 16.0.0 (clang-1600.0.26.3)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.6.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_38b34 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 13:29:00 Aug  9 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+        Library search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=loading
+        found start of include info
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38b34/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_38b34.dir/build.make CMakeFiles/cmTC_38b34.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.3)]
+        ignore line: [Target: arm64-apple-darwin23.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang++: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m;ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"; "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.6.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-YCrvdH -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp;clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin23.6.0;ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include";ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/Library/Frameworks";#include "..." search starts here:;#include <...> search starts here:; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks (framework directory);End of search list.;Linking CXX executable cmTC_38b34;/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38b34.dir/link.txt --verbose=1;/usr/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38b34;Apple clang version 16.0.0 (clang-1600.0.26.3);Target: arm64-apple-darwin23.6.0;Thread model: posix;InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin; "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.6.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_38b34 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_38b34.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a;@(#)PROGRAM:ld PROJECT:ld-1115.7.3;BUILD 13:29:00 Aug  9 2024;configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em;will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em;LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29);TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8);Library search paths:;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift;Framework search paths:;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks;;]
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "td/CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/3.30.5/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "td/CMakeLists.txt:9 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6794/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b6794.dir/build.make CMakeFiles/cmTC_b6794.dir/build
+        Building C object CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.3)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.6.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin23.6.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_b6794
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6794.dir/link.txt --verbose=1
+        /usr/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -o cmTC_b6794
+        Apple clang version 16.0.0 (clang-1600.0.26.3)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.6.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b6794 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 13:29:00 Aug  9 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+        Library search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "td/CMakeLists.txt:9 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "td/CMakeLists.txt:9 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=loading
+        found start of include info
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "td/CMakeLists.txt:9 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6794/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b6794.dir/build.make CMakeFiles/cmTC_b6794.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.3)]
+        ignore line: [Target: arm64-apple-darwin23.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m; "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.6.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pGogZ5 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -fcolor-diagnostics -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c;clang -cc1 version 16.0.0 (clang-1600.0.26.3) default target arm64-apple-darwin23.6.0;ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/local/include";ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/Library/Frameworks";#include "..." search starts here:;#include <...> search starts here:; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks (framework directory);End of search list.;Linking C executable cmTC_b6794;/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6794.dir/link.txt --verbose=1;/usr/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -o cmTC_b6794;Apple clang version 16.0.0 (clang-1600.0.26.3);Target: arm64-apple-darwin23.6.0;Thread model: posix;InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin; "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.6.0 15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b6794 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b6794.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a;@(#)PROGRAM:ld PROJECT:ld-1115.7.3;BUILD 13:29:00 Aug  9 2024;configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em;will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em;LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29);TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8);Library search paths:;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift;Framework search paths:;	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks;;]
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "td/CMakeLists.txt:126 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Ob187L"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Ob187L"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Ob187L'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a948f/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a948f.dir/build.make CMakeFiles/cmTC_a948f.dir/build
+        Building C object CMakeFiles/cmTC_a948f.dir/src.c.o
+        /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a948f.dir/src.c.o -MF CMakeFiles/cmTC_a948f.dir/src.c.o.d -o CMakeFiles/cmTC_a948f.dir/src.c.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Ob187L/src.c
+        Linking C executable cmTC_a948f
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a948f.dir/link.txt --verbose=1
+        /usr/bin/clang  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a948f.dir/src.c.o -o cmTC_a948f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:31 (check_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_STD14"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zPjJoo"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zPjJoo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STD14"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zPjJoo'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_764f4/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_764f4.dir/build.make CMakeFiles/cmTC_764f4.dir/build
+        Building CXX object CMakeFiles/cmTC_764f4.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_STD14  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -std=c++14 -MD -MT CMakeFiles/cmTC_764f4.dir/src.cxx.o -MF CMakeFiles/cmTC_764f4.dir/src.cxx.o.d -o CMakeFiles/cmTC_764f4.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zPjJoo/src.cxx
+        Linking CXX executable cmTC_764f4
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_764f4.dir/link.txt --verbose=1
+        /usr/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_764f4.dir/src.cxx.o -o cmTC_764f4
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:105 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-xwbadB"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-xwbadB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-xwbadB'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_22b5c/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_22b5c.dir/build.make CMakeFiles/cmTC_22b5c.dir/build
+        Building CXX object CMakeFiles/cmTC_22b5c.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WALL  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wall -MD -MT CMakeFiles/cmTC_22b5c.dir/src.cxx.o -MF CMakeFiles/cmTC_22b5c.dir/src.cxx.o.d -o CMakeFiles/cmTC_22b5c.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-xwbadB/src.cxx
+        Linking CXX executable cmTC_22b5c
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22b5c.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_22b5c.dir/src.cxx.o -o cmTC_22b5c
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:106 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-JyY8Ac"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-JyY8Ac"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-JyY8Ac'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf817/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cf817.dir/build.make CMakeFiles/cmTC_cf817.dir/build
+        Building CXX object CMakeFiles/cmTC_cf817.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WEXTRA  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wextra -MD -MT CMakeFiles/cmTC_cf817.dir/src.cxx.o -MF CMakeFiles/cmTC_cf817.dir/src.cxx.o.d -o CMakeFiles/cmTC_cf817.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-JyY8Ac/src.cxx
+        Linking CXX executable cmTC_cf817
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf817.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cf817.dir/src.cxx.o -o cmTC_cf817
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:107 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RKS4oq"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RKS4oq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RKS4oq'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_61b2b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_61b2b.dir/build.make CMakeFiles/cmTC_61b2b.dir/build
+        Building CXX object CMakeFiles/cmTC_61b2b.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wimplicit-fallthrough=2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wimplicit-fallthrough=2 -MD -MT CMakeFiles/cmTC_61b2b.dir/src.cxx.o -MF CMakeFiles/cmTC_61b2b.dir/src.cxx.o.d -o CMakeFiles/cmTC_61b2b.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RKS4oq/src.cxx
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]\x1b[0m
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]\x1b[0m
+        2 warnings generated.
+        Linking CXX executable cmTC_61b2b
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61b2b.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wimplicit-fallthrough=2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_61b2b.dir/src.cxx.o -o cmTC_61b2b
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:108 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WPOINTER_ARITH"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-KacOvc"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-KacOvc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WPOINTER_ARITH"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-KacOvc'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_203b8/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_203b8.dir/build.make CMakeFiles/cmTC_203b8.dir/build
+        Building CXX object CMakeFiles/cmTC_203b8.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WPOINTER_ARITH  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wpointer-arith -MD -MT CMakeFiles/cmTC_203b8.dir/src.cxx.o -MF CMakeFiles/cmTC_203b8.dir/src.cxx.o.d -o CMakeFiles/cmTC_203b8.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-KacOvc/src.cxx
+        Linking CXX executable cmTC_203b8
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_203b8.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_203b8.dir/src.cxx.o -o cmTC_203b8
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:109 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCAST_QUAL"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-5EOXYA"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-5EOXYA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCAST_QUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-5EOXYA'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7ca30/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7ca30.dir/build.make CMakeFiles/cmTC_7ca30.dir/build
+        Building CXX object CMakeFiles/cmTC_7ca30.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WCAST_QUAL  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wcast-qual -MD -MT CMakeFiles/cmTC_7ca30.dir/src.cxx.o -MF CMakeFiles/cmTC_7ca30.dir/src.cxx.o.d -o CMakeFiles/cmTC_7ca30.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-5EOXYA/src.cxx
+        Linking CXX executable cmTC_7ca30
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ca30.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7ca30.dir/src.cxx.o -o cmTC_7ca30
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:110 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSIGN_COMPARE"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0UTQV0"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0UTQV0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSIGN_COMPARE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0UTQV0'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d4262/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d4262.dir/build.make CMakeFiles/cmTC_d4262.dir/build
+        Building CXX object CMakeFiles/cmTC_d4262.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WSIGN_COMPARE  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wsign-compare -MD -MT CMakeFiles/cmTC_d4262.dir/src.cxx.o -MF CMakeFiles/cmTC_d4262.dir/src.cxx.o.d -o CMakeFiles/cmTC_d4262.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0UTQV0/src.cxx
+        Linking CXX executable cmTC_d4262
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4262.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d4262.dir/src.cxx.o -o cmTC_d4262
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:111 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDUPLICATED_BRANCHES"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-eQCCAS"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-eQCCAS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDUPLICATED_BRANCHES"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-eQCCAS'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4d9a0/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4d9a0.dir/build.make CMakeFiles/cmTC_4d9a0.dir/build
+        Building CXX object CMakeFiles/cmTC_4d9a0.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wduplicated-branches -MD -MT CMakeFiles/cmTC_4d9a0.dir/src.cxx.o -MF CMakeFiles/cmTC_4d9a0.dir/src.cxx.o.d -o CMakeFiles/cmTC_4d9a0.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-eQCCAS/src.cxx
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]\x1b[0m
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]\x1b[0m
+        2 warnings generated.
+        Linking CXX executable cmTC_4d9a0
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d9a0.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4d9a0.dir/src.cxx.o -o cmTC_4d9a0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:112 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDUPLICATED_COND"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lysL8N"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lysL8N"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDUPLICATED_COND"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lysL8N'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_13512/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_13512.dir/build.make CMakeFiles/cmTC_13512.dir/build
+        Building CXX object CMakeFiles/cmTC_13512.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WDUPLICATED_COND  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-cond -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wduplicated-cond -MD -MT CMakeFiles/cmTC_13512.dir/src.cxx.o -MF CMakeFiles/cmTC_13512.dir/src.cxx.o.d -o CMakeFiles/cmTC_13512.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lysL8N/src.cxx
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]\x1b[0m
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]\x1b[0m
+        2 warnings generated.
+        Linking CXX executable cmTC_13512
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13512.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-cond -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_13512.dir/src.cxx.o -o cmTC_13512
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:113 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALLOC_ZERO"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-wNNmYG"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-wNNmYG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALLOC_ZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-wNNmYG'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e2ce/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5e2ce.dir/build.make CMakeFiles/cmTC_5e2ce.dir/build
+        Building CXX object CMakeFiles/cmTC_5e2ce.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WALLOC_ZERO  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Walloc-zero -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Walloc-zero -MD -MT CMakeFiles/cmTC_5e2ce.dir/src.cxx.o -MF CMakeFiles/cmTC_5e2ce.dir/src.cxx.o.d -o CMakeFiles/cmTC_5e2ce.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-wNNmYG/src.cxx
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Walloc-zero'; did you mean '-Walloca'? [-Wunknown-warning-option]\x1b[0m
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Walloc-zero'; did you mean '-Walloca'? [-Wunknown-warning-option]\x1b[0m
+        2 warnings generated.
+        Linking CXX executable cmTC_5e2ce
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e2ce.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Walloc-zero -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5e2ce.dir/src.cxx.o -o cmTC_5e2ce
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:114 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WLOGICAL_OP"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-g3WvHS"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-g3WvHS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WLOGICAL_OP"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-g3WvHS'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32b2d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_32b2d.dir/build.make CMakeFiles/cmTC_32b2d.dir/build
+        Building CXX object CMakeFiles/cmTC_32b2d.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WLOGICAL_OP  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wlogical-op -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wlogical-op -MD -MT CMakeFiles/cmTC_32b2d.dir/src.cxx.o -MF CMakeFiles/cmTC_32b2d.dir/src.cxx.o.d -o CMakeFiles/cmTC_32b2d.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-g3WvHS/src.cxx
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]\x1b[0m
+        \x1b[0;1;35mwarning: \x1b[0m\x1b[1munknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]\x1b[0m
+        2 warnings generated.
+        Linking CXX executable cmTC_32b2d
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32b2d.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wlogical-op -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32b2d.dir/src.cxx.o -o cmTC_32b2d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:115 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pNI7Xn"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pNI7Xn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pNI7Xn'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cdb24/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cdb24.dir/build.make CMakeFiles/cmTC_cdb24.dir/build
+        Building CXX object CMakeFiles/cmTC_cdb24.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wtautological-compare -MD -MT CMakeFiles/cmTC_cdb24.dir/src.cxx.o -MF CMakeFiles/cmTC_cdb24.dir/src.cxx.o.d -o CMakeFiles/cmTC_cdb24.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pNI7Xn/src.cxx
+        Linking CXX executable cmTC_cdb24
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdb24.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cdb24.dir/src.cxx.o -o cmTC_cdb24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:117 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WVLA"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Eb2LAH"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Eb2LAH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WVLA"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Eb2LAH'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_58699/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58699.dir/build.make CMakeFiles/cmTC_58699.dir/build
+        Building CXX object CMakeFiles/cmTC_58699.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WVLA  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wvla -MD -MT CMakeFiles/cmTC_58699.dir/src.cxx.o -MF CMakeFiles/cmTC_58699.dir/src.cxx.o.d -o CMakeFiles/cmTC_58699.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Eb2LAH/src.cxx
+        Linking CXX executable cmTC_58699
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58699.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_58699.dir/src.cxx.o -o cmTC_58699
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:118 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNON_VIRTUAL_DTOR"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-n8SVGE"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-n8SVGE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNON_VIRTUAL_DTOR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-n8SVGE'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9fc14/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9fc14.dir/build.make CMakeFiles/cmTC_9fc14.dir/build
+        Building CXX object CMakeFiles/cmTC_9fc14.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WNON_VIRTUAL_DTOR  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wnon-virtual-dtor -MD -MT CMakeFiles/cmTC_9fc14.dir/src.cxx.o -MF CMakeFiles/cmTC_9fc14.dir/src.cxx.o.d -o CMakeFiles/cmTC_9fc14.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-n8SVGE/src.cxx
+        Linking CXX executable cmTC_9fc14
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fc14.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9fc14.dir/src.cxx.o -o cmTC_9fc14
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:119 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_PARAMETER"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3FZITt"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3FZITt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_PARAMETER"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3FZITt'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ce138/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ce138.dir/build.make CMakeFiles/cmTC_ce138.dir/build
+        Building CXX object CMakeFiles/cmTC_ce138.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WUNUSED_PARAMETER  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wunused-parameter -MD -MT CMakeFiles/cmTC_ce138.dir/src.cxx.o -MF CMakeFiles/cmTC_ce138.dir/src.cxx.o.d -o CMakeFiles/cmTC_ce138.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3FZITt/src.cxx
+        Linking CXX executable cmTC_ce138
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce138.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ce138.dir/src.cxx.o -o cmTC_ce138
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:120 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zWX5nO"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zWX5nO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zWX5nO'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cd3a7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cd3a7.dir/build.make CMakeFiles/cmTC_cd3a7.dir/build
+        Building CXX object CMakeFiles/cmTC_cd3a7.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WCONVERSION  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wconversion -MD -MT CMakeFiles/cmTC_cd3a7.dir/src.cxx.o -MF CMakeFiles/cmTC_cd3a7.dir/src.cxx.o.d -o CMakeFiles/cmTC_cd3a7.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zWX5nO/src.cxx
+        Linking CXX executable cmTC_cd3a7
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd3a7.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cd3a7.dir/src.cxx.o -o cmTC_cd3a7
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:121 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSIGN_CONVERSION"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kEgSSA"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kEgSSA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSIGN_CONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kEgSSA'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07f03/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_07f03.dir/build.make CMakeFiles/cmTC_07f03.dir/build
+        Building CXX object CMakeFiles/cmTC_07f03.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WSIGN_CONVERSION  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wsign-conversion -MD -MT CMakeFiles/cmTC_07f03.dir/src.cxx.o -MF CMakeFiles/cmTC_07f03.dir/src.cxx.o.d -o CMakeFiles/cmTC_07f03.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kEgSSA/src.cxx
+        Linking CXX executable cmTC_07f03
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07f03.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_07f03.dir/src.cxx.o -o cmTC_07f03
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:122 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCXX14_COMPAT_PEDANTIC"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-62oZR3"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-62oZR3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCXX14_COMPAT_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-62oZR3'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_15fc7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_15fc7.dir/build.make CMakeFiles/cmTC_15fc7.dir/build
+        Building CXX object CMakeFiles/cmTC_15fc7.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WCXX14_COMPAT_PEDANTIC  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wc++14-compat-pedantic -MD -MT CMakeFiles/cmTC_15fc7.dir/src.cxx.o -MF CMakeFiles/cmTC_15fc7.dir/src.cxx.o.d -o CMakeFiles/cmTC_15fc7.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-62oZR3/src.cxx
+        Linking CXX executable cmTC_15fc7
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15fc7.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_15fc7.dir/src.cxx.o -o cmTC_15fc7
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:123 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDEPRECATED"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-u4JHa3"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-u4JHa3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-u4JHa3'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d89f7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d89f7.dir/build.make CMakeFiles/cmTC_d89f7.dir/build
+        Building CXX object CMakeFiles/cmTC_d89f7.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WDEPRECATED  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wdeprecated -MD -MT CMakeFiles/cmTC_d89f7.dir/src.cxx.o -MF CMakeFiles/cmTC_d89f7.dir/src.cxx.o.d -o CMakeFiles/cmTC_d89f7.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-u4JHa3/src.cxx
+        Linking CXX executable cmTC_d89f7
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d89f7.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d89f7.dir/src.cxx.o -o cmTC_d89f7
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:124 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-cwCX6n"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-cwCX6n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-cwCX6n'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a9da/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5a9da.dir/build.make CMakeFiles/cmTC_5a9da.dir/build
+        Building CXX object CMakeFiles/cmTC_5a9da.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wunused-command-line-argument -MD -MT CMakeFiles/cmTC_5a9da.dir/src.cxx.o -MF CMakeFiles/cmTC_5a9da.dir/src.cxx.o.d -o CMakeFiles/cmTC_5a9da.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-cwCX6n/src.cxx
+        Linking CXX executable cmTC_5a9da
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a9da.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5a9da.dir/src.cxx.o -o cmTC_5a9da
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:125 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_QUNUSED_ARGUMENTS"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RqieDn"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RqieDn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_QUNUSED_ARGUMENTS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RqieDn'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_44f82/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_44f82.dir/build.make CMakeFiles/cmTC_44f82.dir/build
+        Building CXX object CMakeFiles/cmTC_44f82.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_QUNUSED_ARGUMENTS  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Qunused-arguments -MD -MT CMakeFiles/cmTC_44f82.dir/src.cxx.o -MF CMakeFiles/cmTC_44f82.dir/src.cxx.o.d -o CMakeFiles/cmTC_44f82.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-RqieDn/src.cxx
+        Linking CXX executable cmTC_44f82
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44f82.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_44f82.dir/src.cxx.o -o cmTC_44f82
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:126 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kwAJsb"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kwAJsb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kwAJsb'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32a3d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_32a3d.dir/build.make CMakeFiles/cmTC_32a3d.dir/build
+        Building CXX object CMakeFiles/cmTC_32a3d.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wunknown-warning-option -MD -MT CMakeFiles/cmTC_32a3d.dir/src.cxx.o -MF CMakeFiles/cmTC_32a3d.dir/src.cxx.o.d -o CMakeFiles/cmTC_32a3d.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kwAJsb/src.cxx
+        Linking CXX executable cmTC_32a3d
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32a3d.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32a3d.dir/src.cxx.o -o cmTC_32a3d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:127 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WODR"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-D6hX92"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-D6hX92"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WODR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-D6hX92'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7cffb/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7cffb.dir/build.make CMakeFiles/cmTC_7cffb.dir/build
+        Building CXX object CMakeFiles/cmTC_7cffb.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WODR  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wodr -MD -MT CMakeFiles/cmTC_7cffb.dir/src.cxx.o -MF CMakeFiles/cmTC_7cffb.dir/src.cxx.o.d -o CMakeFiles/cmTC_7cffb.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-D6hX92/src.cxx
+        Linking CXX executable cmTC_7cffb
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cffb.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7cffb.dir/src.cxx.o -o cmTC_7cffb
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:128 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-XJLFYQ"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-XJLFYQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-XJLFYQ'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_146b5/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_146b5.dir/build.make CMakeFiles/cmTC_146b5.dir/build
+        Building CXX object CMakeFiles/cmTC_146b5.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -flto-odr-type-merging -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -flto-odr-type-merging -MD -MT CMakeFiles/cmTC_146b5.dir/src.cxx.o -MF CMakeFiles/cmTC_146b5.dir/src.cxx.o.d -o CMakeFiles/cmTC_146b5.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-XJLFYQ/src.cxx
+        clang++: \x1b[0;1;31merror: \x1b[0m\x1b[1munknown argument: '-flto-odr-type-merging'\x1b[0m
+        clang++: \x1b[0;1;31merror: \x1b[0m\x1b[1munknown argument: '-flto-odr-type-merging'\x1b[0m
+        make[1]: *** [CMakeFiles/cmTC_146b5.dir/src.cxx.o] Error 1
+        make: *** [cmTC_146b5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:129 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WPSABI"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-LIvjdo"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-LIvjdo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WPSABI"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-LIvjdo'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72dee/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72dee.dir/build.make CMakeFiles/cmTC_72dee.dir/build
+        Building CXX object CMakeFiles/cmTC_72dee.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WPSABI  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wpsabi -MD -MT CMakeFiles/cmTC_72dee.dir/src.cxx.o -MF CMakeFiles/cmTC_72dee.dir/src.cxx.o.d -o CMakeFiles/cmTC_72dee.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-LIvjdo/src.cxx
+        Linking CXX executable cmTC_72dee
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72dee.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_72dee.dir/src.cxx.o -o cmTC_72dee
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:130 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3fPm6Y"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3fPm6Y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3fPm6Y'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_defea/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_defea.dir/build.make CMakeFiles/cmTC_defea.dir/build
+        Building CXX object CMakeFiles/cmTC_defea.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wunused-member-function -MD -MT CMakeFiles/cmTC_defea.dir/src.cxx.o -MF CMakeFiles/cmTC_defea.dir/src.cxx.o.d -o CMakeFiles/cmTC_defea.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-3fPm6Y/src.cxx
+        Linking CXX executable cmTC_defea
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_defea.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_defea.dir/src.cxx.o -o cmTC_defea
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "td/CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "td/CMake/TdSetUpCompiler.cmake:131 (add_cxx_compiler_flag)"
+      - "td/CMakeLists.txt:133 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Jn8tuz"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Jn8tuz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Jn8tuz'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6f56/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f6f56.dir/build.make CMakeFiles/cmTC_f6f56.dir/build
+        Building CXX object CMakeFiles/cmTC_f6f56.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics   -Wunused-private-field -MD -MT CMakeFiles/cmTC_f6f56.dir/src.cxx.o -MF CMakeFiles/cmTC_f6f56.dir/src.cxx.o.d -o CMakeFiles/cmTC_f6f56.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Jn8tuz/src.cxx
+        Linking CXX executable cmTC_f6f56
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6f56.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f6f56.dir/src.cxx.o -o cmTC_f6f56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "td/CMake/FindAtomics.cmake:43 (check_cxx_source_compiles)"
+      - "td/tdutils/CMakeLists.txt:408 (find_package)"
+    checks:
+      - "Performing Test ATOMICS_FOUND"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-vS08pU"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-vS08pU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "ATOMICS_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-vS08pU'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dc795/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dc795.dir/build.make CMakeFiles/cmTC_dc795.dir/build
+        Building CXX object CMakeFiles/cmTC_dc795.dir/src.cxx.o
+        /usr/bin/clang++ -DATOMICS_FOUND  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_dc795.dir/src.cxx.o -MF CMakeFiles/cmTC_dc795.dir/src.cxx.o.d -o CMakeFiles/cmTC_dc795.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-vS08pU/src.cxx
+        Linking CXX executable cmTC_dc795
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc795.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dc795.dir/src.cxx.o -o cmTC_dc795
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "td/CMakeLists.txt:1291 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Tx0Nop"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Tx0Nop"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Tx0Nop'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d36e0/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d36e0.dir/build.make CMakeFiles/cmTC_d36e0.dir/build
+        Building CXX object CMakeFiles/cmTC_d36e0.dir/src.cxx.o
+        /usr/bin/clang++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics   -fvisibility=hidden -MD -MT CMakeFiles/cmTC_d36e0.dir/src.cxx.o -MF CMakeFiles/cmTC_d36e0.dir/src.cxx.o.d -o CMakeFiles/cmTC_d36e0.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-Tx0Nop/src.cxx
+        Linking CXX executable cmTC_d36e0
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d36e0.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d36e0.dir/src.cxx.o -o cmTC_d36e0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "td/CMakeLists.txt:1291 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ymu3tC"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ymu3tC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ymu3tC'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_304a5/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_304a5.dir/build.make CMakeFiles/cmTC_304a5.dir/build
+        Building CXX object CMakeFiles/cmTC_304a5.dir/src.cxx.o
+        /usr/bin/clang++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics   -fvisibility-inlines-hidden -MD -MT CMakeFiles/cmTC_304a5.dir/src.cxx.o -MF CMakeFiles/cmTC_304a5.dir/src.cxx.o.d -o CMakeFiles/cmTC_304a5.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ymu3tC/src.cxx
+        Linking CXX executable cmTC_304a5
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_304a5.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_304a5.dir/src.cxx.o -o cmTC_304a5
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "td/CMakeLists.txt:1291 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c811/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6c811.dir/build.make CMakeFiles/cmTC_6c811.dir/build
+        Building CXX object CMakeFiles/cmTC_6c811.dir/src.cxx.o
+        /usr/bin/clang++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6c811.dir/src.cxx.o -MF CMakeFiles/cmTC_6c811.dir/src.cxx.o.d -o CMakeFiles/cmTC_6c811.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm/src.cxx
+        \x1b[1m/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm/src.cxx:2:25: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1m'somefunc' is deprecated [-Wdeprecated-declarations]\x1b[0m
+            2 |     int main() { return somefunc();}\x1b[0m
+              | \x1b[0;1;32m                        ^
+        \x1b[0m\x1b[1m/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-0p5tdm/src.cxx:1:16: \x1b[0m\x1b[0;1;30mnote: \x1b[0m'somefunc' has been explicitly marked deprecated here\x1b[0m
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }\x1b[0m
+              | \x1b[0;1;32m               ^
+        \x1b[0m1 warning generated.
+        Linking CXX executable cmTC_6c811
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c811.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6c811.dir/src.cxx.o -o cmTC_6c811
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "td/CMake/FindReadline.cmake:16 (check_cxx_source_compiles)"
+      - "td/CMakeLists.txt:1318 (find_package)"
+    checks:
+      - "Performing Test GNU_READLINE_FOUND"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-fOH09Q"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-fOH09Q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "GNU_READLINE_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-fOH09Q'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_331d3/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_331d3.dir/build.make CMakeFiles/cmTC_331d3.dir/build
+        Building CXX object CMakeFiles/cmTC_331d3.dir/src.cxx.o
+        /usr/bin/clang++ -DGNU_READLINE_FOUND -I/opt/homebrew/opt/readline/include -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_331d3.dir/src.cxx.o -MF CMakeFiles/cmTC_331d3.dir/src.cxx.o.d -o CMakeFiles/cmTC_331d3.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-fOH09Q/src.cxx
+        Linking CXX executable cmTC_331d3
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_331d3.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_331d3.dir/src.cxx.o -o cmTC_331d3  /opt/homebrew/opt/readline/lib/libreadline.dylib
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "td/CMakeLists.txt:1327 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test USABLE_READLINE_FOUND"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-r02RcL"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-r02RcL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field"
+      CMAKE_MODULE_PATH: "/Users/mac/IO_QML/td/CMake;"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "USABLE_READLINE_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-r02RcL'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5fc0d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5fc0d.dir/build.make CMakeFiles/cmTC_5fc0d.dir/build
+        Building CXX object CMakeFiles/cmTC_5fc0d.dir/src.cxx.o
+        /usr/bin/clang++ -DUSABLE_READLINE_FOUND -I/opt/homebrew/opt/readline/include -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fPIE -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_5fc0d.dir/src.cxx.o -MF CMakeFiles/cmTC_5fc0d.dir/src.cxx.o.d -o CMakeFiles/cmTC_5fc0d.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-r02RcL/src.cxx
+        Linking CXX executable cmTC_5fc0d
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fc0d.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Wno-unused-command-line-argument -Qunused-arguments -Wno-unknown-warning-option -Wodr -Wno-psabi -Wunused-member-function -Wunused-private-field  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5fc0d.dir/src.cxx.o -o cmTC_5fc0d  /opt/homebrew/opt/readline/lib/libreadline.dylib
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:42 (_qt_internal_find_qt_dependencies)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:43 (include)"
+      - "/Users/mac/6.7.2/macos/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zFVout"
+      binary: "/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zFVout"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/mac/6.7.2/macos/lib/cmake/Qt6;/Users/mac/6.7.2/macos/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/mac/6.7.2/macos/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.6"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zFVout'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_866b5/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_866b5.dir/build.make CMakeFiles/cmTC_866b5.dir/build
+        Building CXX object CMakeFiles/cmTC_866b5.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_STDATOMIC  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_866b5.dir/src.cxx.o -MF CMakeFiles/cmTC_866b5.dir/src.cxx.o.d -o CMakeFiles/cmTC_866b5.dir/src.cxx.o -c /Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-zFVout/src.cxx
+        Linking CXX executable cmTC_866b5
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_866b5.dir/link.txt --verbose=1
+        /usr/bin/clang++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_866b5.dir/src.cxx.o -o cmTC_866b5
+        
+      exitCode: 0
+...

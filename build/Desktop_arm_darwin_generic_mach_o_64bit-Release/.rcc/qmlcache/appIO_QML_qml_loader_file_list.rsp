@@ -1,0 +1,9 @@
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/.qt/rcc/qmake_IO_QML.qrc
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/.qt/rcc/appIO_QML_raw_qml_0.qrc
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Release/.qt/rcc/shaders.qrc
+/qt/qml/IO_QML/Main.qml
+/qt/qml/IO_QML/LogPage.qml
+/qt/qml/IO_QML/Chats.qml

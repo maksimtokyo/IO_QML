@@ -1,0 +1,141 @@
+{
+    "classes": [
+        {
+            "className": "tg_chatslistmodel",
+            "object": true,
+            "qualifiedClassName": "tg_chatslistmodel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        },
+        {
+            "className": "QTgChatHistory",
+            "object": true,
+            "qualifiedClassName": "QTgChatHistory",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "loadChat",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "ChatListCreated",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "td::td_api::messages*"
+                        }
+                    ],
+                    "name": "createQList",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "sender_id",
+                            "type": "std::int64_t"
+                        },
+                        {
+                            "name": "messagetype",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fileid",
+                            "type": "std::int64_t"
+                        },
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "push_message",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "sender_id",
+                            "type": "std::int64_t"
+                        },
+                        {
+                            "name": "messagetype",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fileid",
+                            "type": "std::int64_t"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "push_message",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "sender_id",
+                            "type": "std::int64_t"
+                        },
+                        {
+                            "name": "messagetype",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "push_message",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "sender_id",
+                            "type": "std::int64_t"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "push_message",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tg_chatslistmodel.h",
+    "outputRevision": 68
+}

@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"td/tdutils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 414,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/tdutils/libtdutils.a"
+			],
+			"targetId" : "tdutils::@565370f97e3ca34d6fc4",
+			"targetIndex" : 85,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "td/tdutils",
+		"source" : "td/tdutils"
+	}
+}

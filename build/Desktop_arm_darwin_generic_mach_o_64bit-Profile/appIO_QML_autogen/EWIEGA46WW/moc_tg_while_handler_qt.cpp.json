@@ -1,0 +1,31 @@
+{
+    "classes": [
+        {
+            "className": "tg_while_handler_qt",
+            "object": true,
+            "qualifiedClassName": "tg_while_handler_qt",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "end_loop",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "name": "start_loop",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tg_while_handler_qt.h",
+    "outputRevision": 68
+}

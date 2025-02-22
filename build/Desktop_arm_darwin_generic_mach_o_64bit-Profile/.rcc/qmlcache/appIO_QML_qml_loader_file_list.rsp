@@ -1,0 +1,5 @@
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/.qt/rcc/qmake_IO_QML.qrc
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/.qt/rcc/appIO_QML_raw_qml_0.qrc
+/qt/qml/IO_QML/Main.qml

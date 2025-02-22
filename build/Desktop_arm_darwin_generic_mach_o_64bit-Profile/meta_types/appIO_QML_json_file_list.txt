@@ -1,0 +1,4 @@
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/appIO_QML_autogen/include/../EWIEGA46WW/moc_tg_chatslistmodel.cpp.json
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/appIO_QML_autogen/include/../EWIEGA46WW/moc_tg_controller_qt.cpp.json
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/appIO_QML_autogen/include/../EWIEGA46WW/moc_tg_peson_qt.cpp.json
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/appIO_QML_autogen/include/../EWIEGA46WW/moc_tg_while_handler_qt.cpp.json

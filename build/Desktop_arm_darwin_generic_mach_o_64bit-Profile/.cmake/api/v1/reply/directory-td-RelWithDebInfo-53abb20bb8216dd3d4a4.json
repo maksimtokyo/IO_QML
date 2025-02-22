@@ -1,0 +1,588 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"generate_pkgconfig"
+		],
+		"files" : 
+		[
+			"td/CMakeLists.txt",
+			"td/CMake/GeneratePkgConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1362,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1371,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1382,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1383,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1384,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1385,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1386,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1390,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 13
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1391,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1392,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1397,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1398,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 21
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1399,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 23
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1402,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 93,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1406,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1414,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1423,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1427,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1429,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1430,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1444,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdjson.1.8.42.dylib"
+			],
+			"targetId" : "tdjson::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 77,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdjson.dylib"
+			],
+			"targetId" : "tdjson::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 77,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdjson_static.a"
+			],
+			"targetId" : "tdjson_static::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 79,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdjson_private.a"
+			],
+			"targetId" : "tdjson_private::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 78,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdcore.a"
+			],
+			"targetId" : "tdcore::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 75,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdmtproto.a"
+			],
+			"targetId" : "tdmtproto::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 81,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdclient.a"
+			],
+			"targetId" : "tdclient::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 74,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"td/libtdapi.a"
+			],
+			"targetId" : "tdapi::@2be9c0b8709c4fd386a5",
+			"targetIndex" : 72,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdutils.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdactor.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdnet.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdsqlite.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tddb.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdmtproto.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdcore.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdclient.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdapi.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdjson_private.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdjson_static.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/pkgconfig/tdjson.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Td",
+			"exportName" : "TdTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tdjson::@2be9c0b8709c4fd386a5",
+					"index" : 77
+				},
+				{
+					"id" : "TdJson::@2be9c0b8709c4fd386a5",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"td/CMakeFiles/Export/14f0cc8ccaea0f66fd2b4abadb8e60ec/TdTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Td",
+			"exportName" : "TdStaticTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tdutils::@565370f97e3ca34d6fc4",
+					"index" : 85
+				},
+				{
+					"id" : "tdactor::@2f1b0e430189e64ff31a",
+					"index" : 71
+				},
+				{
+					"id" : "tdnet::@82a003cd2786d78f80a1",
+					"index" : 82
+				},
+				{
+					"id" : "tdsqlite::@5f66255a82aa063dcfa3",
+					"index" : 83
+				},
+				{
+					"id" : "tddb::@904d4c18f70a77575746",
+					"index" : 76
+				},
+				{
+					"id" : "tdjson_static::@2be9c0b8709c4fd386a5",
+					"index" : 79
+				},
+				{
+					"id" : "TdJsonStatic::@2be9c0b8709c4fd386a5",
+					"index" : 0
+				},
+				{
+					"id" : "tdjson_private::@2be9c0b8709c4fd386a5",
+					"index" : 78
+				},
+				{
+					"id" : "tdcore::@2be9c0b8709c4fd386a5",
+					"index" : 75
+				},
+				{
+					"id" : "tdmtproto::@2be9c0b8709c4fd386a5",
+					"index" : 81
+				},
+				{
+					"id" : "tdclient::@2be9c0b8709c4fd386a5",
+					"index" : 74
+				},
+				{
+					"id" : "TdStatic::@2be9c0b8709c4fd386a5",
+					"index" : 0
+				},
+				{
+					"id" : "tdapi::@2be9c0b8709c4fd386a5",
+					"index" : 72
+				}
+			],
+			"paths" : 
+			[
+				"td/CMakeFiles/Export/14f0cc8ccaea0f66fd2b4abadb8e60ec/TdStaticTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"destination" : "include/td/telegram",
+			"paths" : 
+			[
+				"td/td/telegram/td_json_client.h",
+				"td/td/telegram/td_log.h",
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/td/telegram/tdjson_export.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "include/td/telegram",
+			"paths" : 
+			[
+				"td/td/telegram/Client.h",
+				"td/td/telegram/Log.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "include/td/tl",
+			"paths" : 
+			[
+				"td/td/tl/TlObject.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "include/td/telegram",
+			"paths" : 
+			[
+				"td/td/generate/auto/td/telegram/td_api.h",
+				"td/td/generate/auto/td/telegram/td_api.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Td",
+			"paths" : 
+			[
+				"td/TdConfig.cmake",
+				"build/Desktop_arm_darwin_generic_mach_o_64bit-Profile/td/TdConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "td",
+		"source" : "td"
+	}
+}

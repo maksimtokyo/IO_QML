@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/qt/qml/IO_QML/">
+    <file alias="Main.qml">/Users/mac/IO_QML/Main.qml</file>
+    <file alias="LogPage.qml">/Users/mac/IO_QML/LogPage.qml</file>
+    <file alias="Chats.qml">/Users/mac/IO_QML/Chats.qml</file>
+    <file alias="moonpag.png">/Users/mac/IO_QML/moonpag.png</file>
+    <file alias="sac.png">/Users/mac/IO_QML/sac.png</file>
+    <file alias="nebula.jpg">/Users/mac/IO_QML/nebula.jpg</file>
+    <file alias="flower.png">/Users/mac/IO_QML/flower.png</file>
+  </qresource>
+</RCC>
+

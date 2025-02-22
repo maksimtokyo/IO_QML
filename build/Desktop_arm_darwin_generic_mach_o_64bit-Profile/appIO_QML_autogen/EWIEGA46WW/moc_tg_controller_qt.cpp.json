@@ -1,0 +1,120 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "Tontroll"
+                }
+            ],
+            "className": "tg_controller_qt",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "stringstate",
+                    "notify": "stringstateChanged",
+                    "read": "stringstate",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setStringstate"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "statusloader",
+                    "notify": "statusloaderChanged",
+                    "read": "statusloader",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setStatusloader"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "chatsmodel",
+                    "notify": "chatsmodeChanged",
+                    "read": "chatsmodel",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "tg_chatslistmodel*",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "tg_controller_qt",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "stringstateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "statusloaderChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "chatsmodeChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "std::int32_t"
+                        }
+                    ],
+                    "name": "get_ans_parametrs",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "paramaters_handler",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "need_exit",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "str",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "status_load_chats",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "tg_controller_qt.h",
+    "outputRevision": 68
+}

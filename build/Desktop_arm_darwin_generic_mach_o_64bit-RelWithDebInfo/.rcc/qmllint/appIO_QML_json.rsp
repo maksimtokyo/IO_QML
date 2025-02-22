@@ -1,0 +1,12 @@
+--bare
+-I
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo
+-I
+/Users/mac/6.7.2/macos/./qml
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/.qt/rcc/qmake_IO_QML.qrc
+--resource
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/.qt/rcc/appIO_QML_raw_qml_0.qrc
+/Users/mac/IO_QML/Main.qml
+--json
+/Users/mac/IO_QML/build/Desktop_arm_darwin_generic_mach_o_64bit-RelWithDebInfo/appIO_QML_qmllint.json
